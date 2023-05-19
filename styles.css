@@ -1,0 +1,25 @@
+.invalid {
+    border: 2px solid red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .dark-mode {
+    background-color: #333;
+    color: #523b3b;
+  }
+  
+  .dark-mode input,
+  .dark-mode textarea {
+    background-color: #444;
+    color: #0e0101;
+  }
+  
+  .dark-mode .error-message {
+    color: #921919;
+  }
+  
