@@ -9,17 +9,17 @@
   }
 
   .dark-mode {
-    background-color: #333;
-    color: #523b3b;
+    background-color: #000000;
+    color: #fcfcfc;
   }
   
   .dark-mode input,
   .dark-mode textarea {
-    background-color: #f3f0f0;
-    color: #0e0101;
+    background-color: orange;
+    color: #f7f4f4;
   }
   
   .dark-mode .error-message {
-    color: #921919;
+    color: red;
   }
   
