@@ -55,38 +55,7 @@ function validateFirstName() {
     }
   }
   
-  // Função para validar a Confirmação de Senha
-  function validateConfirmPassword() {
-    const confirmPasswordInput = document.getElementById('confirmPassword');
-    const confirmPasswordError = document.getElementById('confirmPasswordError');
-    const passwordInput = document.getElementById('password');
   
-    if (confirmPasswordInput.value !== passwordInput.value) {
-      confirmPasswordError.textContent = 'A confirmação de senha não corresponde à senha digitada.';
-      confirmPasswordInput.classList.add('invalid');
-    } else {
-      confirmPasswordError.textContent = '';
-      confirmPasswordInput.classList.remove('invalid');
-    }
-  }
-  
-  // Adiciona os event listeners para validar os campos durante a digitação
-  document.getElementById('firstName').addEventListener('input', validateFirstName);
-  document.getElementById('lastName').addEventListener('input', validateLastName);
-  document.getElementById('email').addEventListener('input', validateEmail);
-  document.getElementById('password').addEventListener('input', validatePassword);
-  document.getElementById('confirmPassword').addEventListener('input', validateConfirmPassword);
-  
-  // Event listener para validar o formulário no momento do submit
-  document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
-  
-    validateFirstName();
-    validateLastName();
-    validateEmail();
-    validatePassword();
-    validateConfirmPassword();
-  });
  
   document.getElementById('darkModeButton').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
