@@ -19,10 +19,10 @@ function validateFirstName() {
   
     if (lastNameInput.value.length < 5) {
       lastNameError.textContent = 'O segundo nome deve ter no mínimo 5 caracteres.';
-      lastNameInput.classList.add('invalid');
+      lastNameInput.classList.add('invalido');
     } else {
       lastNameError.textContent = '';
-      lastNameInput.classList.remove('invalid');
+      lastNameInput.classList.remove('invalido');
     }
   }
   
